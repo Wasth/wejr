@@ -3,7 +3,7 @@ name = "wejr"
 version = "0.1.0"
 description = "Communication via websocket in JSON-RPC way"
 authors = ["Wasth <riasta@yandex.ru>"]
-readme = "README.rst"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
