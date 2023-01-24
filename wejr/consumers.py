@@ -23,7 +23,7 @@ class AsyncBaseJsonRpcConsumer(AsyncJsonWebsocketConsumer):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.groups = list(self.group_routers.keys())
+        self.groups = list(self.group_routers.keys()) if self.group_routers else []
 
     async def _handle_request(
         self, router: Router, request_raw: dict, from_channel=False
