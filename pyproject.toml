@@ -8,6 +8,11 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 channels = "^4.0.0"
+channels-redis = {version = "^4.0.0", optional = true}
+
+
+[tool.poetry.extras]
+channel-layer = ["channels-redis"]
 
 
 [tool.poetry.group.dev.dependencies]
