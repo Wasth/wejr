@@ -52,7 +52,7 @@ client = Router()
 chat = Router()
 
 @client.method
-async def chat_by_id(consumer, request, params: ChatId)
+async def chat_by_id(consumer, request, params: ChatId):
     chat = get_chat_data(params.id)
     consumer.send_result(request, chat)
 
